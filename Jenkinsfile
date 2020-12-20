@@ -6,7 +6,7 @@ pipeline {
                 echo "$GIT_BRANCH"
             }
         }
-        stage('Docker build'){
+        stage('Docker Build'){
             steps{
                 sh(scripts: 'docker images -a')
                 sh(scripts: """
